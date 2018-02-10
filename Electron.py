@@ -1,3 +1,9 @@
+"""
+Created on Fri Feb 9 23:33:12 2018
+
+@author: Andrés C. Marulanda
+"""
+
 import numpy as np
 import matplotlib.pylab as plt
 
@@ -88,7 +94,7 @@ plt.show()
 
 
 #generalize to more than two electrons
-noElectrons = int(input('Número de electrones (no se pase mijo): '))
+noElectrons = int(input('Number of electrons: '))
 listEl = [Electron(np.random.random(2)) for i in range(noElectrons)]  #List of electrons
 
 histF = []
@@ -106,9 +112,9 @@ x=[i for i in range(len(histF))]
 plt.plot(x,histF,'k-')
 plt.show()
 
+
+#The following lines plot the system in a 3d scatter plot
 from mpl_toolkits.mplot3d import Axes3D
-import matplotlib.pyplot as plt
-import numpy as np
 
 fig = plt.figure()
 ax = fig.add_subplot(111, projection='3d')
@@ -128,10 +134,8 @@ ax.set_zlabel('Z')
 plt.show()
 
 
-
+#Plot distances between each electron at the end of the optimization
 for i in range(noElectrons): 
     for j in range(noElectrons):
         print('distance from e-',i,'to e- ',j,': ',listEl[j].distFromEl(listEl,i))
     print('-------------------------------')
-
-
