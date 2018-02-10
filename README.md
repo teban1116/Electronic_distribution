@@ -11,4 +11,4 @@ This repo includes two files:
 You can execute the first file in your terminal, I recomend this.
 
 
-You can, however, look at the second file for the code and results. 
+You can, however, look at the second file for the code and results. Because of random initialization, you shouldn't get the exact same results.
