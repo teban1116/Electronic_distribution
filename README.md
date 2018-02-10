@@ -8,7 +8,7 @@ This repo includes two files:
   
   -Electron.ipynb
 
-You can execute the first fie in your terminal, I recomend this.
+You can execute the first file in your terminal, I recomend this.
 
 
 You can, however, look at the second file for the code and results. 
